@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/12 13:49:57 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/12 14:01:57 by nfigueir         ###   ########.fr       */
+/*   Created: 2024/06/12 13:32:49 by nfigueir          #+#    #+#             */
+/*   Updated: 2024/06/12 14:01:30 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE
-# define GET_NEXT_LINE
+#include "get_next_line"
+#include <fcntl.h>
 
-#include <unistd.h>
-#include <stdlib.h>
+int	main(void)
+{
+	int	fd;
+	char	*filepath;
 
-char	*get_next_line(int fd);
+	filepath = "file.txt"
+	fd = open(filepath, O_RDONLY);
 
-#endif
-
+	get_next_line();
+}
