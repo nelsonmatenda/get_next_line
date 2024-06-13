@@ -6,7 +6,7 @@
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 13:49:57 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/12 14:01:57 by nfigueir         ###   ########.fr       */
+/*   Updated: 2024/06/13 10:46:26 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h> // TODO: dev 
+
+# define BUFFER_SIZE 42
 
 char	*get_next_line(int fd);
 
