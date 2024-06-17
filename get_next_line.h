@@ -6,7 +6,7 @@
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 13:49:57 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/13 12:50:39 by nfigueir         ###   ########.fr       */
+/*   Updated: 2024/06/17 09:15:42 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 #include <stdio.h> // TODO: dev 
 
 #ifndef BUFFER_SIZE
-# define BUFFER_SIZE 42
+# define BUFFER_SIZE 2
 #endif
 
 char	*get_next_line(int fd);
 char	*ft_strchr(const char *s, int c);
-
+char	*ft_strdup(const char *s);
+char    *ft_strjoin(char const *s1, char const *s2);
 #endif
-

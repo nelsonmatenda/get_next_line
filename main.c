@@ -6,7 +6,7 @@
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 13:32:49 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/13 13:16:03 by nfigueir         ###   ########.fr       */
+/*   Updated: 2024/06/17 10:08:06 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main(void)
 {
 	int	fd;
 	char	*filepath;
-	char *retorno_gnl;
+	//char *retorno_gnl;
 
 	filepath = "file.txt";
 	fd = open(filepath, O_RDONLY);
@@ -27,9 +27,7 @@ int	main(void)
 		return (-1);
 	}
 	
-	while ((retorno_gnl = get_next_line(fd)) != NULL)
-	{
-		printf("%s\n", retorno_gnl);
-		free(retorno_gnl);
-	}
+	get_next_line(fd);
+	get_next_line(fd);
+	return (0);
 }
