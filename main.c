@@ -6,7 +6,7 @@
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 13:32:49 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/17 10:08:06 by nfigueir         ###   ########.fr       */
+/*   Updated: 2024/06/19 18:36:50 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@ int	main(void)
 		return (-1);
 	}
 	
-	get_next_line(fd);
-	get_next_line(fd);
+	printf("%s", get_next_line(fd));
+	printf("%s", get_next_line(fd));
+	printf("%s", get_next_line(fd));
+	printf("%s", get_next_line(fd));
 	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 12:45:26 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/17 09:26:35 by nfigueir         ###   ########.fr       */
+/*   Updated: 2024/06/19 10:11:07 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
