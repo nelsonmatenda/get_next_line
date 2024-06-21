@@ -6,7 +6,7 @@
 /*   By: nfigueir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 08:51:54 by nfigueir          #+#    #+#             */
-/*   Updated: 2024/06/21 16:24:39 by nfigueir         ###   ########.fr       */
+/*   Updated: 2024/06/21 16:47:27 by nfigueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*get_next_line(int fd)
 	static t_data	stash;
 	char			line[7000000];
 	int				i;
-	
+
 	if (stash.is_init == 0)
 		ft_init_stash(&stash);
 	if (fd < 0 || fd >= MAX_FD || BUFFER_SIZE <= 0)
